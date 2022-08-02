@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "331575284397",
+    "project_id": "event-reminder-d2ae0",
+    "storage_bucket": "event-reminder-d2ae0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:331575284397:android:e768e6973a23e16e45ec24",
+        "android_client_info": {
+          "package_name": "com.example.fhooks1_lec6"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "331575284397-8nnag9lao6m2psoarjp4a63vospfqg8u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtALyCN_o8VP5BZ2JnNpf5AlZ9BhBZqCM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "331575284397-8nnag9lao6m2psoarjp4a63vospfqg8u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
