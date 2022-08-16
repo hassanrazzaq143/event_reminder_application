@@ -1,5 +1,7 @@
 import 'package:fhooks1_lec6/Screeens/homePage/bottom_navigation_bar/Festivals/festival_description.dart';
+import 'package:fhooks1_lec6/Screeens/homePage/bottom_navigation_bar/internationalDays/days_discription.dart';
 import 'package:fhooks1_lec6/models/festival_model.dart';
+import 'package:fhooks1_lec6/prects.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -147,7 +149,8 @@ class _FestivalsState extends State<Festivals> {
       },
       child: Card(
         margin: EdgeInsets.symmetric(vertical: 8.0.h),
-        color: const Color.fromARGB(57, 155, 39, 176),
+        // color: const Color.fromARGB(57, 155, 39, 176),
+        color: Colors.cyan.shade800,
         child: ListTile(
           title: Text(
             user.festivalName,

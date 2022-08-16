@@ -167,7 +167,8 @@ class _InternationalDaysState extends State<InternationalDays> {
         }
       },
       child: Card(
-        color: const Color.fromARGB(57, 155, 39, 176),
+        // color: const Color.fromARGB(57, 155, 39, 176),
+        color: Colors.cyan.shade800,
         child: ListTile(
           title: Text(
             user.name,

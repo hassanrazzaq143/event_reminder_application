@@ -1,5 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:fhooks1_lec6/Screeens/resources/notification_api.dart';
 import 'package:fhooks1_lec6/utills/colors.dart';
+import 'package:fhooks1_lec6/utills/utills.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -345,9 +347,19 @@ class _PostCardState extends State<PostCard> {
                                     onChanged: (value) {
                                       setState(() {
                                         isAlert = value;
-                                        // if (isSelected) {
-                                        //   NotificatonApi.showScheduleNotification(
-                                        //       scheduleDate: time!);
+                                        if (isAlert) {
+                                          NotificatonApi
+                                              .showScheduleNotification(
+                                            id: 0,
+                                            title: titleController.text,
+                                            body: selectedvalue,
+                                            scheduleDate: time,
+                                            payLoad: "dinner_6pm",
+                                          );
+                                          // showSnackBar("Done", context);
+                                        }
+                                        // if (isAlert) {
+                                        //   showSnackBar("Done", context);
                                         // }
                                       });
                                     },
@@ -507,7 +519,8 @@ class _PostCardState extends State<PostCard> {
       builder: (context, child) => Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10),
         child: Card(
-          color: const Color.fromARGB(57, 155, 39, 176),
+          // color: const Color.fromARGB(57, 155, 39, 176),
+          color: Colors.cyan.shade800,
           child: ListTile(
             title: Text(
               widget.snap["title"],
@@ -531,7 +544,15 @@ class _PostCardState extends State<PostCard> {
             leading: CircleAvatar(
               // radius: 30.r,
               backgroundColor: Colors.blue[200],
-              backgroundImage: NetworkImage(widget.snap["iconUrl"]),
+              backgroundImage: NetworkImage(
+                widget.snap["iconUrl"],
+              ),
+            ),
+            trailing: Image.asset(
+              "icons/tap-icon.png",
+              height: 30.h,
+              width: 30.w,
+              color: Colors.white,
             ),
             onTap: () {
               showDialog(
@@ -539,7 +560,7 @@ class _PostCardState extends State<PostCard> {
                 builder: (context) {
                   return StatefulBuilder(
                     builder: (BuildContext context, setPState) => AlertDialog(
-                      backgroundColor: appBackgroundColor,
+                      backgroundColor: Colors.cyan.shade800,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20),
                       ),

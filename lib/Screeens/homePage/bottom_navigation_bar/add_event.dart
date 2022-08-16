@@ -1,11 +1,13 @@
 import 'package:fhooks1_lec6/Screeens/resources/firebase_storage.dart';
 import 'package:fhooks1_lec6/Screeens/homePage/home_page.dart';
 import 'package:fhooks1_lec6/Screeens/resources/notification_api.dart';
+import 'package:fhooks1_lec6/utills/colors.dart';
 import 'package:fhooks1_lec6/utills/utills.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class AddEvent extends StatefulWidget {
   const AddEvent({Key? key}) : super(key: key);
@@ -75,9 +77,8 @@ class _AddEventState extends State<AddEvent> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: const Color.fromARGB(166, 37, 122, 115),
-      ),
+      theme: ThemeData.dark()
+          .copyWith(scaffoldBackgroundColor: appBackgroundColor),
       home: ScreenUtilInit(
         designSize: const Size(399, 844),
         minTextAdapt: false,
@@ -162,11 +163,9 @@ class _AddEventState extends State<AddEvent> {
                         children: [
                           Text(
                             'App Name',
-                            style: TextStyle(
-                              fontFamily: 'Poppins',
-                              fontSize: 20.sp,
-                              fontWeight: FontWeight.w400,
-                              fontStyle: FontStyle.italic,
+                            style: GoogleFonts.mouseMemoirs(
+                              textStyle:
+                                  Theme.of(context).textTheme.displaySmall,
                             ),
                           ),
                           SizedBox(
@@ -239,7 +238,7 @@ class _AddEventState extends State<AddEvent> {
                               child: Container(
                                 decoration: BoxDecoration(
                                     color: Colors.cyan[200],
-                                    borderRadius: BorderRadius.circular(15.r)),
+                                    borderRadius: BorderRadius.circular(20.r)),
                                 child: Form(
                                   key: _formkey,
                                   autovalidateMode:
@@ -251,6 +250,9 @@ class _AddEventState extends State<AddEvent> {
                                     iconEnabledColor: Colors.blueGrey,
                                     // focusColor: Colors.amber,
                                     isExpanded: true,
+                                    decoration: const InputDecoration(
+                                      border: InputBorder.none,
+                                    ),
                                     // menuMaxHeight: 100,
                                     hint: Text(
                                       'Select the Category',
@@ -395,12 +397,19 @@ class _AddEventState extends State<AddEvent> {
                               ),
                               Switch(
                                 value: isSelected,
+                                activeColor: Colors.cyan,
                                 onChanged: (value) {
                                   setState(() {
                                     isSelected = value;
                                     if (isSelected) {
                                       NotificatonApi.showScheduleNotification(
-                                          scheduleDate: time!);
+                                        id: 0,
+                                        title: "Hassan",
+                                        body: "Flutter Developer",
+                                        scheduleDate: time!,
+                                        payLoad: "dinner_6pm",
+                                      );
+                                      // showSnackBar("Done", context);
                                     }
                                   });
                                 },
@@ -418,6 +427,9 @@ class _AddEventState extends State<AddEvent> {
                               )
                             ],
                           ),
+                          SizedBox(
+                            height: 20.h,
+                          ),
                           Padding(
                             padding: EdgeInsets.only(bottom: 128.0.h),
                             child: ElevatedButton(
@@ -428,7 +440,8 @@ class _AddEventState extends State<AddEvent> {
                                 ),
                                 // minimumSize: Size(100.w, 50.h),
                                 // maximumSize: Size(100.w, 50.h),
-                                fixedSize: Size(100.w, 50.h),
+                                fixedSize: Size(200.w, 50.h),
+                                surfaceTintColor: Colors.cyan.shade800,
                               ),
                               // style: ButtonStyle(
                               //   shape: MaterialStateProperty.all<
@@ -480,29 +493,28 @@ class _AddEventState extends State<AddEvent> {
 
                                 titleController.text = "";
                               },
-                              child: Ink(
-                                decoration: BoxDecoration(
-                                  gradient: const LinearGradient(
-                                    colors: [
-                                      Color.fromARGB(255, 4, 221, 250),
-                                      Color.fromARGB(255, 44, 97, 139)
-                                    ],
-                                  ),
-                                  borderRadius: BorderRadius.circular(20.r),
-                                ),
-                                child: Align(
-                                  alignment: Alignment.center,
-                                  child: (isLoading)
-                                      ? const CircularProgressIndicator(
-                                          color: Colors.white,
-                                        )
-                                      : Text(
-                                          'Done',
-                                          style: TextStyle(
-                                              fontSize: 15.sp,
-                                              fontFamily: 'Poppins'),
-                                        ),
-                                ),
+                              // child: Ink(
+                              //   decoration: BoxDecoration(
+                              //     gradient: const LinearGradient(
+                              //       colors: [
+                              //         Color.fromARGB(255, 4, 221, 250),
+                              //         Color.fromARGB(255, 44, 97, 139)
+                              //       ],
+                              //     ),
+                              //     borderRadius: BorderRadius.circular(20.r),
+                              //   ),
+                              child: Align(
+                                alignment: Alignment.center,
+                                child: (isLoading)
+                                    ? const CircularProgressIndicator(
+                                        color: Colors.white,
+                                      )
+                                    : Text(
+                                        'Done',
+                                        style: TextStyle(
+                                            fontSize: 15.sp,
+                                            fontFamily: 'Poppins'),
+                                      ),
                               ),
                             ),
                           ),

@@ -69,18 +69,18 @@ class _AtStartState extends State<AtStart> {
                         ),
                         child: RaisedButton(
                           onPressed: () async {
-                            setState(() {
-                              isLoading = true;
-                            });
-                            await Anonymous().signIn();
+                            if (mounted) {
+                              setState(() {
+                                isLoading = true;
+                              });
+                            }
 
-                            // Future.delayed(
-                            //   Duration(seconds: 3),
-                            // );
-                            Anonymous().signIn();
-                            setState(() {
-                              isLoading = false;
-                            });
+                            await Anonymous().signIn();
+                            if (mounted) {
+                              setState(() {
+                                isLoading = false;
+                              });
+                            }
                           },
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(80.0)),

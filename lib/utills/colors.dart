@@ -1,3 +1,3 @@
 import 'package:flutter/cupertino.dart';
 
-Color appBackgroundColor = const Color.fromARGB(166, 37, 122, 115);
+Color appBackgroundColor = const Color.fromRGBO(137, 183, 255, .25);

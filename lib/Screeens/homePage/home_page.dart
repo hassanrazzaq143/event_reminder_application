@@ -3,6 +3,7 @@ import 'package:fhooks1_lec6/Screeens/homePage/bottom_navigation_bar/add_event.d
 import 'package:fhooks1_lec6/Screeens/homePage/bottom_navigation_bar/internationalDays/international_days.dart';
 import 'package:fhooks1_lec6/Screeens/homePage/bottom_navigation_bar/myEvents/my_events.dart';
 import 'package:fhooks1_lec6/Screeens/homePage/bottom_navigation_bar/home.dart';
+import 'package:fhooks1_lec6/Screeens/resources/notification_api.dart';
 import 'package:flutter/material.dart';
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 
@@ -24,11 +25,11 @@ class _HomePageState extends State<HomePage> {
     const InternationalDays(),
     const Festivals(),
   ];
-  // @override
-  // void initState() {
-  //   super.initState();
-  //   NotificatonApi.init();
-  // }
+  @override
+  void initState() {
+    super.initState();
+    NotificatonApi.init();
+  }
 
   @override
   Widget build(BuildContext context) {

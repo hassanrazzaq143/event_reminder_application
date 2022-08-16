@@ -49,6 +49,8 @@ dependencies:
   provider: ^6.0.3
   flutter_local_notifications: ^9.7.0
   flutter_neumorphic: ^3.2.0
+  timezone: ^0.8.0
+  google_fonts: ^3.0.1
   
 
 dev_dependencies:
@@ -90,6 +92,7 @@ flutter:
     - images/tea_day.jpg
     - images/teacher_day.jpg
     - images/touarism_day.jpg
+    - images/home_background.jpg
     - icons/education_icon.jpg
     - icons/father_icon.jpeg
     - icons/health_icon.png
@@ -102,6 +105,7 @@ flutter:
     - icons/teacher_icon.jpeg
     - icons/touarism_icon.png
     - icons/friend_icon.png
+    - icons/tap-icon.png
     - festival_icons/adha_icon.jpg
     - festival_icons/aloha_icon.jpg
     - festival_icons/brat_icon.jpg
