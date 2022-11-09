@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "E:\\try02\\Flutter hooks\\fhooks1_lec6\\build\\firebase_auth\\intermediates\\merged_res\\release\\drawable-xxhdpi-v4\\googleg_standard_color_18.png",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-3\\bceb9e12ec1235e5e83ea774176f124f\\transformed\\jetified-play-services-base-17.1.0\\res\\drawable-xxhdpi-v4\\googleg_standard_color_18.png"
+    },
+    {
+        "merged": "E:\\try02\\Flutter hooks\\fhooks1_lec6\\build\\firebase_auth\\intermediates\\merged_res\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-3\\bceb9e12ec1235e5e83ea774176f124f\\transformed\\jetified-play-services-base-17.1.0\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
+        "merged": "E:\\try02\\Flutter hooks\\fhooks1_lec6\\build\\firebase_auth\\intermediates\\merged_res\\release\\drawable-xxhdpi-v4\\googleg_disabled_color_18.png",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-3\\bceb9e12ec1235e5e83ea774176f124f\\transformed\\jetified-play-services-base-17.1.0\\res\\drawable-xxhdpi-v4\\googleg_disabled_color_18.png"
+    },
+    {
+        "merged": "E:\\try02\\Flutter hooks\\fhooks1_lec6\\build\\firebase_auth\\intermediates\\merged_res\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-3\\bceb9e12ec1235e5e83ea774176f124f\\transformed\\jetified-play-services-base-17.1.0\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
+    },
+    {
+        "merged": "E:\\try02\\Flutter hooks\\fhooks1_lec6\\build\\firebase_auth\\intermediates\\merged_res\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-3\\bceb9e12ec1235e5e83ea774176f124f\\transformed\\jetified-play-services-base-17.1.0\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
+    },
+    {
+        "merged": "E:\\try02\\Flutter hooks\\fhooks1_lec6\\build\\firebase_auth\\intermediates\\merged_res\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-3\\bceb9e12ec1235e5e83ea774176f124f\\transformed\\jetified-play-services-base-17.1.0\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
+    }
+]

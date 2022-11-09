@@ -51,6 +51,9 @@ dependencies:
   flutter_neumorphic: ^3.2.0
   timezone: ^0.8.0
   google_fonts: ^3.0.1
+  playing_cards: ^0.3.1+9
+  enum_to_string: ^2.0.1
+  get_storage: ^2.0.3
   
 
 dev_dependencies:

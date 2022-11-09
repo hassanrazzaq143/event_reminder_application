@@ -200,11 +200,6 @@ class _AddEventState extends State<AddEvent> {
                                     fontFamily: 'Poppins',
                                     color: Colors.blueGrey,
                                   ),
-                                  // border: OutlineInputBorder(
-                                  //     borderRadius: BorderRadius.circular(15.r),
-                                  //     borderSide: BorderSide.none),
-                                  // fillColor: Colors.cyan[200],
-                                  // filled: true,
                                 ),
                                 validator: (value) {
                                   if (value!.isEmpty) {

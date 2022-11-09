@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">331575284397-8nnag9lao6m2psoarjp4a63vospfqg8u.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">331575284397</string>
+    <string name="google_api_key" translatable="false">AIzaSyBtALyCN_o8VP5BZ2JnNpf5AlZ9BhBZqCM</string>
+    <string name="google_app_id" translatable="false">1:331575284397:android:e768e6973a23e16e45ec24</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBtALyCN_o8VP5BZ2JnNpf5AlZ9BhBZqCM</string>
+    <string name="google_storage_bucket" translatable="false">event-reminder-d2ae0.appspot.com</string>
+    <string name="project_id" translatable="false">event-reminder-d2ae0</string>
+</resources>
